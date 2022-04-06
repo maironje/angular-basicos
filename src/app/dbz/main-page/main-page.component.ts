@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Personaje } from '../interfaces/dbz.interface';
+
+
+
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent  {
 
-  agregar(  ) {
-    // evento.preventDefault();
-    console.log('hey  !!!');
+  // get personajes(): Personaje[]
+  // {
+  //   return this.DbzService.personajes;
+  // }
+ 
+  nuevo:Personaje = {
+    nombre: 'maestro roshi', 
+    poder: 0
+  }
+
+
+  constructor(){
   }
 
 }
